@@ -91,3 +91,13 @@ Now anytime you want to use it PATH=/opt/mips-none-elf/bin:$PATH
 tools are mips-none-elf-gcc, mips-none-elf-as, etc.
 
 (last tested with gcc 4.6.3)
+
+Just tested with gcc 4.7.0:
+
+../configure --target=mips-none-elf --prefix=/opt/mips-none-elf \
+--disable-libssp --disable-libc --disable-libgcc
+
+important to use make all-gcc and install-gcc instead of make and make install
+
+
+
